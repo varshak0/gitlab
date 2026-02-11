@@ -1,1 +1,10 @@
-welcome
+name: first CI job
+
+on: [push]
+ jobs:
+   simple-job:
+    runs-on: ubuntu-latest
+     steps:
+       name: print message
+        run: echo"CI is runnig successfully"
+
